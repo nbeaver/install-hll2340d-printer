@@ -21,3 +21,5 @@ sudo dpkg --install --force-all 'hll2340dlpr-3.2.0-1.i386.deb'
 wget 'http://download.brother.com/welcome/dlf101913/hll2340dcupswrapper-3.2.0-1.i386.deb'
 
 sudo dpkg --install --force-all 'hll2340dcupswrapper-3.2.0-1.i386.deb'
+
+# TODO: use lpadmin instead of fiddling with the CUPS web GUI.
