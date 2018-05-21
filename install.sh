@@ -4,7 +4,11 @@ set -e
 
 sudo apt-get install lib32stdc++6
 
-sudo aa-complain cupsd
+if type aa-complain &> /dev/null
+then
+    # Disable AppArmor for cupsd.
+    sudo aa-complain cupsd
+fi
 
 sudo mkdir --parents /usr/lib/cups
 sudo mkdir --parents /usr/lib/cups/filter
