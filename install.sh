@@ -10,7 +10,6 @@ then
     sudo aa-complain cupsd
 fi
 
-sudo mkdir --parents /usr/lib/cups
 sudo mkdir --parents /usr/lib/cups/filter
 sudo mkdir --parents /usr/share/cups/model
 
